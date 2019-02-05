@@ -41,8 +41,9 @@ public class MainActivity extends AppCompatActivity implements updateViewInterfa
         } else if (rb3.isChecked()) {
             numPeople = 3;
         }
-        tipCalc.calculate(bill, numPeople, cbService.isChecked());
-    }
+        tipCalc.calculate(bill, numPeople, cbService.isChecked());}
+
+        /* Abby Sova's Test Commit } */
 
     @Override
     public void updateView(Double totalTip, Double tipPerPerson) {
@@ -50,3 +51,4 @@ public class MainActivity extends AppCompatActivity implements updateViewInterfa
         tvTipPerPerson.setText( "Tip per Person: " + tipPerPerson.toString());
     }
 }
+
